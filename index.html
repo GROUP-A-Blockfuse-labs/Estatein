@@ -4,44 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estatein</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./src/output.css" />
   </head>
-  <body class="bg-[#1E1E1E] text-white">
+  <body class="bg-[#1E1E1E] text-white overflow-x-hidden">
     <!-- header/ nav-bar... -->
 
-    <header class="flex justify-between items-center p-3 bg-[#262626]">
-      <img src="./images/estatein-logo.png" alt="" class="ml-20" />
+    <header
+      class="flex justify-between items-center p-3 bg-[#262626] max-md:w-full"
+    >
+      <img src="./images/estatein-logo.png" alt="" class="lg:ml-20" />
       <!-- Desktop -->
-      <nav class="flex justify-center items-center gap-9">
+      <nav class="flex justify-center items-center gap-9 max-md:hidden">
         <a href="" class="bg-[#1E1E1E] p-2 rounded">Home</a>
         <a href="">About Us</a>
         <a href="">Properties</a>
         <a href="">Services</a>
       </nav>
-      <button class="mr-20 bg-[#1E1E1E] p-2 rounded">Contact Us</button>
+      <button class="mr-20 bg-[#1E1E1E] p-2 rounded max-md:hidden">
+        Contact Us
+      </button>
+      <span class="lg:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </span>
     </header>
 
     <!-- Hero section -->
     <main>
-      <section class="flex justify-between">
-        <div class="ml-20 space-y-5 mt-20">
-          <h1 class="font-bold text-4xl">
+      <section
+        class="flex max-md:flex-col-reverse  justify-between"
+      >
+        <div class=" lg:mt-20 lg:ml-20 ml-3 space-y-3  ">
+          <h1 class="font-bold text-2xl lg:text-4xl">
             Discover Your Dream <br />
             Property with Estatein
           </h1>
-          <p>
+          <p class="text-sm">
             Your journey to finding the perfect property begins here. Explore
             our listings <br />
             to find the home that matches your dreams.
           </p>
 
-          <div class="flex gap-3">
-            <button class="p-2 rounded border-[#262626] border-2">
+          <div class="max-lg:grid max-lg:grid-cols-1 lg:flex lg:items-center lg:gap-10  ">
+            <button class="p-2 w-full mb-2 lg:w-32  rounded-lg border-[#262626] border-2">
               Learn More
-            </button>
-            <button class="bg-[#703BF7] p-1 rounded">Browse Properties</button>
+            </button> 
+            <button class="bg-[#703BF7] max-lg:w-full p-2 lg:py-2.5   rounded-lg">Browse Properties</button>
           </div>
-          <div class="flex justify-baseline items-center gap-4">
+          <div class="grid grid-cols-2 lg:mt-10 lg:grid-cols-3 justify-baseline items-center gap-4">
             <div class="bg-[#262626] p-8">
               <span class="font-bold text-2xl">200+</span>
               <p class="text-[14px]">Happy Customers</p>
@@ -51,23 +67,23 @@
               <p class="text-[14px]">Properties For Clients</p>
             </div>
 
-            <div class="bg-[#262626] p-8">
+            <div class="bg-[#262626] p-8 max-lg:col-span-2">
               <span class="font-bold text-2xl">16+</span>
               <p class="text-[14px]">Years of Experience</p>
             </div>
           </div>
         </div>
         <div class="">
-          <img src="./images/estatein-bg.png" alt="" class="h-137.5" />
+          <img src="./images/estatein-bg.png" alt="" class="lg:h-137.5 " />
+          <div class="relative bottom-14 lg:bottom-110 lg:right-20">
+            <img src="./images/Sub Container-bg.png" alt="" class="w-24 lg:w-32" />
+          </div>
         </div>
       </section>
-      <div class="absolute bottom-80 left-160">
-        <img src="./images/Sub Container-bg.png" alt="" class="w-32" />
-      </div>
 
-      <section class="border-[#262626] border-2 w-full">
-        <div class="grid grid-cols-4 gap-2">
-          <div class="bg-[#262626] p-2 m-5 w-full text-center">
+      <section class="border-[#262626] max-lg:mt-10 border-2 w-full">
+        <div class="grid grid-cols-2 items-center lg:grid-cols-4 gap-1 lg:mr-2 lg:ml-2 m-2">
+          <div class="bg-[#262626] p-2  text-center rounded-lg lg:rounded-lg ">
             <img
               src="./images/find Icon .png"
               alt=""
@@ -77,11 +93,11 @@
             <img
               src="./images/arrow Icon.png"
               alt=""
-              class="relative bottom-24 left-72"
+              class="relative bottom-28 left-28 lg:left-72 lg:bottom-24"
             />
           </div>
 
-          <div class="bg-[#262626] p-2 m-5 w-full text-center">
+          <div class="bg-[#262626] p-2  text-center rounded-lg lg:rounded-lg">
             <img
               src="./images/unlock Icon .png"
               alt=""
@@ -91,11 +107,11 @@
             <img
               src="./images/arrow Icon.png"
               alt=""
-              class="relative bottom-24 left-72"
+              class="relative bottom-28 left-28 lg:left-72 lg:bottom-24"
             />
           </div>
 
-          <div class="bg-[#262626] p-2 m-5 w-full text-center">
+          <div class="bg-[#262626] p-2  text-center rounded-lg lg:rounded-lg">
             <img
               src="./images/effotless Icon .png"
               alt=""
@@ -105,11 +121,11 @@
             <img
               src="./images/arrow Icon.png"
               alt=""
-              class="relative bottom-24 left-72"
+              class="relative bottom-36 left-28 lg:left-72 lg:bottom-24"
             />
           </div>
 
-          <div class="bg-[#262626] p-2 m-5 text-center">
+          <div class="bg-[#262626] p-2 text-center rounded-lg lg:rounded-lg  ">
             <img
               src="./images/effotless Icon .png"
               alt=""
@@ -119,7 +135,7 @@
             <img
               src="./images/arrow Icon.png"
               alt=""
-              class="relative bottom-24 left-64"
+              class="relative bottom-36 left-28 lg:left-72 lg:bottom-24"
             />
           </div>
         </div>
@@ -127,32 +143,33 @@
 
       <!-- Featured Properties -->
       <section>
-        <div class="ml-20 mt-24 space-y-3">
+        <div class="ml-3 mt-16 lg:ml-20  lg:mt-20  space-y-3">
           <img src="./images/Abstract Design.png" alt="" />
           <h2 class="font-bold text-3xl">Featured Properties</h2>
-          <div class="flex gap-20">
-            <p class="font-light">
+          <div class="grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-150 ">
+            <p class="font-light text-sm">
               Explore our handpicked selection of featured properties. Each
               listing offers a glimpse into exceptional homes and investments
               available <br />
               through Estatein. Click "View Details" for more information.
             </p>
-            <button class="p-2 rounded border-[#262626] border-2 font-light">
+            <button class="p-2 lg:h-16 lg:w-40 rounded border-[#262626] border-2 font-light">
               View All Properties
             </button>
           </div>
         </div>
 
         <!--Featured Properties card  -->
-        <div class="flex gap-2 ml-20 mr-20 mt-10">
-          <div class="border-[#262626] border-2 p-4 space-y-3 w-100">
-            <img src="./images/properties-img1.png" alt="" />
+        <div class="grid grid-cols-1 gap-2 mt-10 ml-3 mr-3 lg:ml-20 lg:mr-20  lg:grid-cols-3 lg:gap-3">
+          <div class="border-[#262626] border-2 p-4 space-y-3 w-[320px] lg:p-4 lg:w-100">
+            <img src="./images/properties-img1.png" alt="" / class="object-cover">
             <span class="font-bold">Seaside Serenity Villa</span>
             <p class="font-light">
-              A stunning 4-bedroom, 3-bathroom villa in a <br> peaceful suburban
-              neighborhood... <a href="" class="font-bold">Read More</a>
+              A stunning 4-bedroom, 3-bathroom villa in a
+              peaceful suburban neighborhood...
+              <a href="" class="font-bold">Read More</a>
             </p>
-            <div class="flex gap-1">
+            <div class="grid grid-cols-2 gap-1 lg:grid-cols-3 lg:gap-1">
               <button
                 class="flex gap-1 rounded-full p-2 w-36 border-[#262626] border-2"
               >
@@ -172,24 +189,26 @@
                 <span>vila</span>
               </button>
             </div>
-            <div class="flex gap-28 items-center">
+            <div class="flex gap-14 lg:gap-28 items-center">
               <span>
-                <p class="font-light">Price</p>
-                <strong>$550.000</strong>
+                <p class="font-light text-sm">Price</p>
+                <strong class="text-sm lg:text-[17px]">$550.000</strong>
               </span>
               <a href="">
-                <button class="bg-[#703BF7] p-2 rounded">View Property Details</button>
+                <button class="bg-[#703BF7] p-2 rounded w-44 lg:p-2 ">
+                  View Property Details
+                </button>
               </a>
             </div>
           </div>
 
-           <div class="border-[#262626] border-2 p-4 space-y-3 w-100">
-            <img src="./images/properties-img2.png" alt="" />
+          <div class="border-[#262626] border-2 p-4 space-y-3 w-[320px] lg:p-4 lg:w-100">
+            <img src="./images/properties-img2.png" alt="" / class="object-cover">
             <span class="font-bold">Metropolitan Haven</span>
             <p class="font-light">
               A chic and fully-furnished 2-bedroom apartment with panoramic city views... <a href="" class="font-bold">Read More</a> 
             </p>
-            <div class="flex gap-1">
+            <div class="grid grid-cols-2 gap-1 lg:grid-cols-3 lg:gap-1">
               <button
                 class="flex gap-1 rounded-full p-2 w-36 border-[#262626] border-2"
               >
@@ -209,24 +228,25 @@
                 <span>vila</span>
               </button>
             </div>
-            <div class="flex gap-28 items-center">
+            <div class="flex gap-14 lg:gap-28 items-center">
               <span>
-                <p class="font-light">Price</p>
-                <strong>$550.000</strong>
+                <p class="font-light text-sm">Price</p>
+                <strong class="text-sm lg:text-[17px]">$550.000</strong>
               </span>
               <a href="">
-                <button class="bg-[#703BF7] p-2 rounded">View Property Details</button>
+                <button class="bg-[#703BF7] p-2 rounded w-44 lg:p-2 ">
+                  View Property Details
+                </button>
               </a>
             </div>
           </div>
 
-           <div class="border-[#262626] border-2 p-4 space-y-3 w-100">
-            <img src="./images/properties-img3.png" alt="" />
+          <div class="border-[#262626] border-2 p-4 space-y-3 w-[320px] lg:p-4 lg:w-100">
+            <img src="./images/properties-img3.png" alt="" / class="object-cover">
             <span class="font-bold">Rustic Retreat Cottage</span>
             <p class="font-light">
-              An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community... <a href="" class="font-bold"> Read More</a>
-            </p> 
-            <div class="flex gap-1">
+                An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community... <a href="" class="font-bold">Read More </a> </p>
+            <div class="grid grid-cols-2 gap-1 lg:grid-cols-3 lg:gap-1">
               <button
                 class="flex gap-1 rounded-full p-2 w-36 border-[#262626] border-2"
               >
@@ -246,16 +266,20 @@
                 <span>vila</span>
               </button>
             </div>
-            <div class="flex gap-28 items-center">
+            <div class="flex gap-14 lg:gap-28 items-center">
               <span>
-                <p class="font-light">Price</p>
-                <strong>$550.000</strong>
+                <p class="font-light text-sm">Price</p>
+                <strong class="text-sm lg:text-[17px]">$550.000</strong>
               </span>
               <a href="">
-                <button class="bg-[#703BF7] p-2 rounded">View Property Details</button>
+                <button class="bg-[#703BF7] p-2 rounded w-44 lg:p-2 ">
+                  View Property Details
+                </button>
               </a>
             </div>
           </div>
+
+     
         </div>
       </section>
     </main>
