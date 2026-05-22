@@ -5,34 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="/src/output.css">
 </head>
 
-<body class="">
-    <!--Navbar-->
-    <nav class="border-b border-zinc-800 px-4 py-5 bg-black text-white ">
-        <div class="mx-30 flex items-center justify-between">
-            <!--Logo -->
-            <div class="flex items-center gap-3">
-                <img src="/images/image copy 5.png" alt="" class="w-10 h-10">
-                <h1 class="text-xl sm:text-2xl font-semibold">
-                    Estatein
-                </h1>
-            </div>
-            <!-- Nav Links -->
-            <div class="hidden md:flex items-center gap-3">
-                <a href="#" class="px-5 py-3 rounded-xl bg-transparent border border-transparent"> Home </a>
-                <a href="#" class="px-5 py-3 rounded-xl bg-transparent border border-transparent">About Us</a>
-                <a href="#" class="px-5 py-3 rounded-xl bg-transparent border border-transparent">Properties</a>
-                <a href="#" class="px-5 py-3 rounded-xl border border-zinc-800 bg-zinc-950">Services</a>
-            </div>
-            <!--Buttons -->
-            <button class="hidden sm:block border border-zinc-800 px-4 sm:px-6 py-3 rounded-xl bg-zinc-950">Contact Us
-            </button>
-        </div>
-    </nav>
+<body class="text-white bg-[#1E1E1E]">
+     <!-- header/ nav-bar... -->
+
+    <header
+      class="flex justify-between items-center p-3 bg-[#262626] max-md:w-full"
+    >
+      <img src="./images/estatein-logo.png" alt="" class="lg:ml-20" />
+      <!-- Desktop -->
+      <nav class="flex justify-center items-center gap-9 max-md:hidden">
+        <a href="#" class="bg-[#1E1E1E] p-2 rounded">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="properties.html">Properties</a>
+        <a href="services.html">Services</a>
+      </nav>
+     <a href="contact.html"> <button class="mr-20 bg-[#1E1E1E] p-2 rounded max-md:hidden">
+        Contact Us
+      </button> </a>
+      <span class="lg:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </span>
+    </header>
     <!--hero section-->
-    <section class="bg-black text-white px-4 py-12">
+    <section class=" text-white px-4 py-12">
         <div class="mx-30">
             <div class="p-4 sm:p-6 lg:p-10">
                 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-4 leading-tight">Elevate Your Real Estate
@@ -90,7 +95,7 @@
 
     <!--section2-->
 
-    <section class="bg-black text-white px-4 py-16">
+    <section class=" text-white px-4 py-16">
 
         <div class="mx-30">
 
@@ -313,7 +318,7 @@
 
     </section>
 
-    <section class="bg-black text-white px-4 py-16">
+    <section class=" text-white px-4 py-16">
 
         <div class=" mx-30">
 
@@ -480,87 +485,122 @@
             </div>
 
 
-            <!-- Footer -->
-            <footer class="border-t border-zinc-800 mt-20 pt-16">
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10">
-
-                    <!-- Logo -->
-                    <div class="lg:col-span-2">
-                        <div class="w-14 h-14 rounded-full flex items-center justify-center gap-2">
-                            <img src="/images/image copy 21.png" alt="" class="w-15">
-
-                            <h2 class="text-3xl font-semibold mb-8 text-purple-500">
-                                Estatein
-                            </h2>
-                        </div>
-
-                        <div class="flex items-center border border-zinc-800 rounded-xl overflow-hidden">
-
-                            <input type="email" placeholder="Enter Your Email"
-                                class="bg-transparent px-4 py-3 w-full outline-none text-white">
-                            <img src="/images/image copy 23.png" alt="" class="w-3 mr-5">
-
-                        </div>
-
-                    </div>
 
 
-                    <!-- Links 1 -->
-                    <div>
-                        <h3 class="text-lg font-medium mb-5">Home</h3>
-
-                        <ul class="space-y-3 text-zinc-400">
-                            <li>Hero Section</li>
-                            <li>Features</li>
-                            <li>Properties</li>
-                            <li>Testimonials</li>
-                            <li>FAQ's</li>
-                        </ul>
-                    </div>
-
-
-                    <!-- Links 2 -->
-                    <div>
-                        <h3 class="text-lg font-medium mb-5">About Us</h3>
-
-                        <ul class="space-y-3 text-zinc-400">
-                            <li>Our Story</li>
-                            <li>Our Works</li>
-                            <li>How It Works</li>
-                            <li>Our Team</li>
-                            <li>Our Clients</li>
-                        </ul>
-                    </div>
-
-
-                    <!-- Links 3 -->
-                    <div>
-                        <h3 class="text-lg font-medium mb-5">Properties</h3>
-
-                        <ul class="space-y-3 text-zinc-400">
-                            <li>Portfolio</li>
-                            <li>Categories</li>
-                        </ul>
-                    </div>
-
-
-                    <!-- Links 4 -->
-                    <div>
-                        <h3 class="text-lg font-medium mb-5">Services</h3>
-
-                        <ul class="space-y-3 text-zinc-400">
-                            <li>Valuation Mastery</li>
-                            <li>Strategic Marketing</li>
-                            <li>Negotiation Wizardry</li>
-                            <li>Closing Success</li>
-                            <li>Property Management</li>
-                        </ul>
-                    </div>
-                </div>
-            </footer>
-        </div>
+        
     </section>
+
+
+
+        <!-- section footer -->
+         <section class="mt-10 bg-[#262626] border border-[#262626]">
+  
+  <div class="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 p-8 lg:mx-20">
+
+    <!-- Logo + Email -->
+    <div class="space-y-4">
+      <img src="./images/estatein-logo.png" alt="Estatein Logo" class="w-40">
+
+      <div class="p-3 border border-[#1E1E1E] flex items-center justify-between rounded-md">
+        <span><i class="fa-regular fa-envelope"></i></span>
+
+        <input 
+          type="email" 
+          placeholder="Enter Your Email" 
+          class="bg-transparent outline-none text-sm px-2 w-full"
+        >
+
+        <span><i class="fa-solid fa-paper-plane"></i></span>
+      </div>
+    </div>
+
+    <!-- Home -->
+    <div class="space-y-3">
+      <h4 class="font-light text-gray-400">Home</h4>
+      <ul class="space-y-2 font-bold">
+        <li>Hero Section</li>
+        <li>Features</li>
+        <li>Properties</li>
+        <li>Testimonials</li>
+        <li>FAQ's</li>
+      </ul>
+    </div>
+
+    <!-- About -->
+    <div class="space-y-3">
+      <h4 class="font-light text-gray-400">About Us</h4>
+      <ul class="space-y-2 font-bold">
+        <li>Our Story</li>
+        <li>Our Works</li>
+        <li>How It Works</li>
+        <li>Our Team</li>
+        <li>Our Clients</li>
+      </ul>
+    </div>
+
+    <!-- Properties -->
+    <div class="space-y-3">
+      <h4 class="font-light text-gray-400">Properties</h4>
+      <ul class="space-y-2 font-bold">
+        <li>Portfolio</li>
+        <li>Categories</li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="space-y-3">
+      <h4 class="font-light text-gray-400">Services</h4>
+      <ul class="space-y-2 font-bold">
+        <li>Valuation</li>
+        <li>Strategic Marketing</li>
+        <li>Negotiation Wizardry</li>
+        <li>Closing Success</li>
+        <li>Property Management</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="space-y-3">
+      <h4 class="font-light text-gray-400">Contact Us</h4>
+      <ul class="space-y-2 font-bold">
+        <li>Contact Form</li>
+        <li>Our Offices</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="mt-5 px-6 py-4 lg:mx-20 flex flex-col md:flex-row items-center justify-between gap-5 text-center md:text-left">
+
+  <div class="flex flex-col md:flex-row gap-3 md:gap-10">
+    <p>©2023 Estatein. All Rights Reserved.</p>
+    <p>Terms & Conditions</p>
+  </div>
+
+  <div class="flex items-center gap-3">
+    <span class="rounded-full p-2 text-lg bg-[#262626]">
+      <i class="fa-brands fa-facebook"></i>
+    </span>
+
+    <span class="rounded-full p-2 text-lg bg-[#262626]">
+      <i class="fa-brands fa-linkedin"></i>
+    </span>
+
+    <span class="rounded-full p-2 text-lg bg-[#262626]">
+      <i class="fa-brands fa-twitter"></i>
+    </span>
+
+    <span class="rounded-full p-2 text-lg bg-[#262626]">
+      <i class="fa-brands fa-youtube"></i>
+    </span>
+  </div>
+
+</footer>
+
+
+    
 
 
 
